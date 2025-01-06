@@ -19,6 +19,8 @@ IT Repair Shop Tycoon je simulace a tycoon hra zaměřená na správu IT opravny
 - **Grafika:** Pixelorama
 - **Audio:** Audacity, 8-bitová hudba
 
+## Ukázka assetů
+
 
 ## Autor
 
