@@ -7,7 +7,7 @@ IT Repair Shop Tycoon je simulace a tycoon hra zaměřená na správu IT opravny
 ## Hlavní vlastnosti
 
 - **Správa zákazníků:** Přijímání zakázek, komunikace se zákazníky a organizace oprav.
-- **Různé druhy zařízení:** Počítače, telefony a další elektronika s různými typy poruch.
+- **Různé druhy zařízení:** Telefony a další elektronika s různými typy poruch.
 - **Rozšiřování opravny:** Vylepšování vybavení, rozšiřování kapacity a zlepšování služeb.
 - **Pixel art styl:** Atraktivní retro grafika vytvořená v nástroji Pixelorama.
 - **Realistické zvukové efekty:** Zvuky nástrojů a interakcí vytvořené v Audacity.
@@ -19,18 +19,6 @@ IT Repair Shop Tycoon je simulace a tycoon hra zaměřená na správu IT opravny
 - **Grafika:** Pixelorama
 - **Audio:** Audacity, 8-bitová hudba
 
-## Jak hrát
-
-1. Stáhněte a spusťte hru.
-2. Přijímejte zákazníky a spravujte jejich zakázky.
-3. Diagnostikujte závady na zařízeních a provádějte opravy.
-4. Vylepšujte svou opravnu a budujte reputaci.
-
-## Instalace
-
-1. Stáhněte herní soubory z [odkazu](#).
-2. Rozbalte soubory do libovolné složky.
-3. Spusťte soubor `ITRepairShopTycoon.exe` (nebo odpovídající soubor pro váš operační systém).
 
 ## Autor
 
