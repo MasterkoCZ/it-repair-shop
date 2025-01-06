@@ -20,7 +20,8 @@ IT Repair Shop Tycoon je simulace a tycoon hra zaměřená na správu IT opravny
 - **Audio:** Audacity, 8-bitová hudba
 
 ## Ukázka vzhledu
-Na tomto obrázku není všechen vzhled, jen základní jako je character, floor, wall a window. Ostatní jako je např. grafika telefonu je zde [Grafika](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Graphics)
+Na tomto obrázku není všechen vzhled, jen základní jako je character, floor, wall a window. Ostatní jako je např. grafika telefonu je zde [Grafika](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Graphics).
+Celá grafika např. počítače, notebooky atd. budou přidány později a budou ve finální hře.
 ![Ukázka assetu](It_repair_shop_asset.png)
 
 ## Autor
@@ -29,4 +30,4 @@ Josef Razák
 
 ## Licence
 
-Tato hra je chráněna autorskými právy. Použití zdrojových kódů, grafiky nebo zvuku bez svolení autora není povoleno. Hudba je použitá pod licencí, která umožňuje její využití v nekomerčních projektech.
+Tato hra je chráněna autorskými právy. Použití zdrojových kódů, grafiky nebo zvuku bez svolení autora není povoleno. Použitá hudba je NOCOPYRIGHT.
