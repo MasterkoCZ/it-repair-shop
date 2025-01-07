@@ -21,7 +21,7 @@ IT Repair Shop Tycoon je simulace a tycoon hra zaměřená na správu IT opravny
 
 ## Ukázka vzhledu
 Na tomto obrázku není všechen vzhled, jen základní jako je character, floor, wall a window. Ostatní jako je např. grafika telefonu je zde [Grafika](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Graphics).
-Celá grafika např. počítače, notebooky atd. budou přidány později a budou ve finální hře.
+Celá grafika např. počítače, notebooky atd. budou přidány později a budou ve finální hře - zatím nejsou ani přímo ve hře.
 ![Ukázka assetu](It_repair_shop_asset.png)
 
 ## Autor
