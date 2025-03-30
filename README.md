@@ -3,8 +3,8 @@
 ## 1. Základní koncepce
 "IT Repair Shop Tycoon" je 2D simulace a tycoon hra s pixel art stylem, vytvořená v Godot Engine. Hráč se stává majitelem podzemní IT opravny, kde spravuje zákazníky, opravuje zařízení (telefony, počítače) a rozvíjí svůj podnik. Hratelnost stojí na organizaci práce, rychlém řešení poruch a budování reputace. Zábava plyne z rozšiřování opravny a zvyšování efektivity.
 
-- **Úvodní studie:** Hra je proveditelná v Godot 4 s jednoduchými 2D mechanikami. Zdroje: Godot, Pixelorama pro grafiku, Audacity pro zvuky, půjčená 8-bit hudba.
-- **Hrubý popis:** Hráč přijímá zakázky od NPC, opravuje zařízení pomocí dílů a vylepšuje dílnu. Cílem je získat reputaci a rozrůst podnik.
+- **Úvodní studie:** Hra je provedená v Godot 4 s jednoduchými 2D mechanikami. Zdroje: Godot, Pixelorama pro grafiku, Audacity pro zvuky, půjčená 8-bit hudba.
+- **Hrubý popis:** Hráč přijímá zakázky od NPC, opravuje zařízení pomocí dílů a vylepšuje dílnu. Cílem je získat co nejvíce peněz a rozrůst podnik.
 - **Technologie:** Godot 4 (GDScript), 2D pohled shora, pixel art.
 
 *Náčrt prostředí: [game/design/sketch.png](game/design/sketch.png) – zatím placeholder, finální verze později.*
