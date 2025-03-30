@@ -7,17 +7,13 @@
 - **Hrubý popis:** Hráč přijímá zakázky od NPC, opravuje zařízení pomocí dílů a vylepšuje dílnu. Cílem je získat co nejvíce peněz a rozrůst podnik.
 - **Technologie:** Godot 4 (GDScript), 2D pohled shora, pixel art.
 
-*Náčrt prostředí: [game/design/sketch.png](game/design/sketch.png) – zatím placeholder, finální verze později.*
-
 ## 2. GameDesign
 - **Pravidla:**
   - Hráč pohybuje postavou po dílně (mřížka 8x8).
-  - Zákazníci (NPC) nosí zařízení s poruchami (např. telefon: baterie 20%, počítač: rozbitý disk).
-  - Opravné body: Telefon (50 bodů), Počítač (100 bodů).
-  - Vylepšení: Rychlost oprav (1 díl/5s → 1 díl/3s), kapacita dílny (+2 sloty).
-  - Reputace: Zvyšuje se za každou opravu (+10), klesá za selhání (-5).
+  - Zákazníci (NPC) nosí zařízení s poruchami (např. telefon: špatná baterie).
+  - Opravné peníze: Telefon (50 peněz).
+  - Vylepšení: Rychlost generování dílů (20s → 15s).
 - **Příběh:** Hráč zdědí starou dílnu a musí ji zachránit před úpadkem.
-- **Data:** Základní atributy zařízení viz [game/design/devices.xlsx](game/design/devices.xlsx) – připravuje se.
 
 ## 3. Grafika
 - **Software:** Pixelorama.
