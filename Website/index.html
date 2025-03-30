@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Repair Shop</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Kontejner pro částice -->
+    <div id="particles-js"></div>
+
+    <header>
+        <video autoplay muted loop id="background-video">
+            <source src="Background.mp4" type="video/mp4">
+            Tvůj prohlížeč nepodporuje video.
+        </video>
+        <div class="header-content">
+            <h1>IT Repair Shop</h1>
+            <p>Opravuj telefony a počítače v podzemí zapomenuté dílny</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">O hře</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#controls">Ovládání</a></li>
+            <li><a href="#download">Stáhnout</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="fade-section">
+        <h2>O hře</h2>
+        <p>Vstup do temného světa opravářské dílny, kde NPC přinášejí rozbité telefony a ty je musíš opravit pomocí dílů z generátorů. Vylepšuj své vybavení, odemykej nové technologie a bojuj s časem, abys zachránil svůj podnik před zapomněním.</p>
+    </section>
+
+    <section id="gallery" class="fade-section">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="stul.png" alt="Opravářský stůl">
+            <img src="generator.png" alt="Generátor dílů">
+            <img src="npc.png" alt="NPC s telefonem">
+        </div>
+    </section>
+
+    <section id="controls" class="fade-section">
+        <h2>Ovládání</h2>
+        <dl>
+            <dt>Pohyb:</dt>
+            <dd>Šipky nebo WASD</dd>
+            <dt>Interakce:</dt>
+            <dd>E (převzetí předmětu, sběr dílů)</dd>
+            <dt>Vylepšení generátoru:</dt>
+            <dd>U (když jsi u generátoru)</dd>
+            <dt>Inventář:</dt>
+            <dd>I (zobrazení/skrytí inventáře)</dd>
+        </dl>
+    </section>
+
+    <section id="download" class="fade-section">
+        <h2>Stáhnout</h2>
+        <p>Hra je ve vývoji – sleduj můj <a href="https://github.com/MasterkoCZ/it-repair-shop" target="_blank">GitHub</a>!</p>
+    </section>
+
+    <section id="contact" class="fade-section">
+        <h2>Kontakt</h2>
+        <p>Máš otázky? Piš na: <a href="mailto:info@itrepairshop.com">info@itrepairshop.com</a></p>
+    </section>
+
+    <footer>
+        <p>Vytvořeno v Godot 4 | © 2025 Josef Razák</p>
+    </footer>
+
+    <!-- Particles.js z CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Tvůj script.js -->
+    <script src="script.js"></script>
+    <!-- Inicializace částic -->
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 200, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00b7ff" },
+                "shape": { "type": "edge" },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": false },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out"
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { 
+                        "enable": true, 
+                        "mode": "repulse",
+                    },
+                    "onclick": { 
+                        "enable": true, 
+                        "mode": "push" 
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
