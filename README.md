@@ -1,33 +1,70 @@
 # IT Repair Shop Tycoon
 
-## Popis hry
+## 1. Základní koncepce
+"IT Repair Shop Tycoon" je 2D simulace a tycoon hra s pixel art stylem, vytvořená v Godot Engine. Hráč se stává majitelem podzemní IT opravny, kde spravuje zákazníky, opravuje zařízení (telefony, počítače) a rozvíjí svůj podnik. Hratelnost stojí na organizaci práce, rychlém řešení poruch a budování reputace. Zábava plyne z rozšiřování opravny a zvyšování efektivity.
 
-IT Repair Shop Tycoon je simulace a tycoon hra zaměřená na správu IT opravny. Hráč se stává majitelem opravny, kde spravuje zákazníky, opravuje zařízení a rozvíjí svůj podnik. Cílem hry je budovat reputaci, zvyšovat efektivitu oprav a získávat nové dovednosti.
+- **Úvodní studie:** Hra je proveditelná v Godot 4 s jednoduchými 2D mechanikami. Zdroje: Godot, Pixelorama pro grafiku, Audacity pro zvuky, půjčená 8-bit hudba.
+- **Hrubý popis:** Hráč přijímá zakázky od NPC, opravuje zařízení pomocí dílů a vylepšuje dílnu. Cílem je získat reputaci a rozrůst podnik.
+- **Technologie:** Godot 4 (GDScript), 2D pohled shora, pixel art.
 
-## Hlavní vlastnosti
+*Náčrt prostředí: [game/design/sketch.png](game/design/sketch.png) – zatím placeholder, finální verze později.*
 
-- **Správa zákazníků:** Přijímání zakázek, komunikace se zákazníky a organizace oprav.
-- **Různé druhy zařízení:** Telefony a další elektronika s různými typy poruch.
-- **Rozšiřování opravny:** Vylepšování vybavení, rozšiřování kapacity a zlepšování služeb.
-- **Pixel art styl:** Atraktivní retro grafika vytvořená v nástroji Pixelorama.
-- **Realistické zvukové efekty:** Zvuky nástrojů a interakcí vytvořené v Audacity.
-- **8-bitová hudba:** Půjčená z internetu pro autentickou retro atmosféru.
+## 2. GameDesign
+- **Pravidla:**
+  - Hráč pohybuje postavou po dílně (mřížka 8x8).
+  - Zákazníci (NPC) nosí zařízení s poruchami (např. telefon: baterie 20%, počítač: rozbitý disk).
+  - Opravné body: Telefon (50 bodů), Počítač (100 bodů).
+  - Vylepšení: Rychlost oprav (1 díl/5s → 1 díl/3s), kapacita dílny (+2 sloty).
+  - Reputace: Zvyšuje se za každou opravu (+10), klesá za selhání (-5).
+- **Příběh:** Hráč zdědí starou dílnu a musí ji zachránit před úpadkem.
+- **Data:** Základní atributy zařízení viz [game/design/devices.xlsx](game/design/devices.xlsx) – připravuje se.
 
-## Použité technologie
+## 3. Grafika
+- **Software:** Pixelorama.
+- **Hardware:** PC, myš.
+- **Pravidla:** 16x16 px sprity, retro pixel art, paleta 8 barev (tmavé tóny + modrý akcent #00b7ff).
+- **Návrhy:** Základní assety (postava, podlaha, zeď, okno) v [It_repair_shop_asset.png](It_repair_shop_asset.png).
+- **Assety:** [game/Graphics/](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Graphics) – aktuálně postava a prostředí, telefony/počítače přidány později.
 
-- **Herní engine:** Godot
-- **Grafika:** Pixelorama
-- **Audio:** Audacity, 8-bitová hudba
+## 4. Zvuky
+- **Software:** Audacity.
+- **Hardware:** Mikrofon, PC.
+- **Koncepce:** Realistické 8-bit zvuky (nástroje, sběr dílů, kroky).
+- **Nahrávky:** Zatím hrubé zvuky kroků [game/assets/sounds/step.wav](game/assets/sounds/step.wav).
+- **Assety:** Finální zvuky budou doladěny ve finální verzi.
 
-## Ukázka vzhledu
-Na tomto obrázku není všechen vzhled, jen základní jako je character, floor, wall a window. Ostatní jako je např. grafika telefonu je zde [Grafika](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Graphics).
-Celá grafika např. počítače, notebooky atd. budou přidány později a budou ve finální hře - zatím nejsou ani přímo ve hře.
-![Ukázka assetu](It_repair_shop_asset.png)
+## 5. Hudba
+- **Software:** Žádný (půjčená hudba).
+- **Hardware:** PC.
+- **Koncepce:** 8-bit chiptune pro retro atmosféru, klidná v menu, rychlá ve hře. Hudba je NOCOPYRIGHT, stažena z internetu.
+- **Nahrávky:** [game/assets/music/menu.mp3](game/assets/music/menu.mp3).
+- **Assety:** Finální výběr později.
 
-## Autor
+## 6. Implementace
+- **Prototypy:**
+  - Pohyb postavy: [game/prototypes/movement.tscn](game/prototypes/movement.tscn).
+  - Přijímání zakázek: [game/prototypes/order_system.tscn](game/prototypes/order_system.tscn).
+- **Hra:** Základní scéna [game/scenes/main.tscn](game/scenes/main.tscn), logika v [game/scripts/player.gd](game/scripts/player.gd).
 
-Josef Razák
+## 7. Propagace
+- **Koncepce:** Web s představením hry a screenshoty.
+- **Materiály:**
+  - Web: [web/index.html](web/index.html).
+  - Banner: [web/banner.png](web/banner.png) – placeholder, finální verze později.
+  - Video: Plánováno.
 
-## Licence
+## 8. Finální hra
+Aktuální verze obsahuje pohyb, základní UI (`partsList`) a systém zakázek.  
+- **Screenshoty:** [web/screenshots/](web/screenshots/) – menu, dílna, HUD (připravuje se).
+- **Build:**
+  - Windows: [build/ITRepairShopTycoon.exe](build/ITRepairShopTycoon.exe).
+  - HTML5: [build/html5/index.html](build/html5/index.html) – spustitelné na serveru.
 
-Tato hra je chráněna autorskými právy. Použití zdrojových kódů, grafiky nebo zvuku bez svolení autora není povoleno. Použitá hudba je NOCOPYRIGHT.
+## 9. Závěr
+Největší výzvou bylo nastavení UI – `partsList` překrýval popisný `Label`, což jsem vyřešil přidáním `VBoxContainer`. Hra je zatím prototyp, ale mechaniky fungují. Chybí komplexní zařízení (počítače, notebooky) a finální hudba – plánuji dokončit do dalšího termínu.
+
+---
+
+**Odkaz na repozitář:** [https://github.com/MasterkoCZ/it-repair-shop](https://github.com/MasterkoCZ/it-repair-shop)  
+**Autor:** Josef Razák  
+**Licence:** Autorská práva © 2025, hudba NOCOPYRIGHT.
