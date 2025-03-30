@@ -18,8 +18,5 @@ Tento repozitář obsahuje webovou stránku pro hru **IT Repair Shop**, vytvoře
 - `script.js`: JavaScript pro animaci sekcí při scrollování.
 - `Background.mp4`: Video v headeru.
 - `stul.png`, `generator.png`, `npc.png`: Obrázky v galerii.
+- `Logo.png`: Obrázek v title.
 
-## Spuštění
-1. Naklonujte repozitář:
-   ```bash
-   git clone https://github.com/MasterkoCZ/it-repair-shop.git
