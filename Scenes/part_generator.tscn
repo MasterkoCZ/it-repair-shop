@@ -1,0 +1,92 @@
+[gd_scene load_steps=11 format=3 uid="uid://cgbbymy1jvj7w"]
+
+[ext_resource type="Script" path="res://Scenes/part_generator.gd" id="1_aofc5"]
+[ext_resource type="Texture2D" uid="uid://hu1x287pnbtt" path="res://Generator1.png" id="3_vdp05"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1d0gi"]
+size = Vector2(70, 55)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeqj8"]
+atlas = ExtResource("3_vdp05")
+region = Rect2(0, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hl83n"]
+atlas = ExtResource("3_vdp05")
+region = Rect2(80, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2tyq"]
+atlas = ExtResource("3_vdp05")
+region = Rect2(160, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w57b1"]
+atlas = ExtResource("3_vdp05")
+region = Rect2(240, 0, 80, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0ievm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeqj8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hl83n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2tyq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w57b1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4e2g"]
+size = Vector2(94, 111)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dmv5t"]
+bg_color = Color(0.18359, 0.18359, 0.18359, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[node name="PartGenerator" type="StaticBody2D"]
+script = ExtResource("1_aofc5")
+
+[node name="Kolize" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -6.5)
+shape = SubResource("RectangleShape2D_1d0gi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0ievm")
+autoplay = "default"
+frame = 2
+frame_progress = 0.0254544
+speed_scale = 2.0
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(-2, 10.5)
+shape = SubResource("RectangleShape2D_p4e2g")
+
+[node name="InfoLabel" type="Label" parent="."]
+offset_left = -57.0
+offset_top = -49.0
+offset_right = 65.0
+offset_bottom = -39.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 8
+theme_override_styles/normal = SubResource("StyleBoxFlat_dmv5t")
+text = "Level: 1, Time: 20 s"

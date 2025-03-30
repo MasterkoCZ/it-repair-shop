@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://brj4axckbbxrh"]
+
+[ext_resource type="Script" path="res://Scenes/npc.gd" id="1_fw7bw"]
+[ext_resource type="Texture2D" uid="uid://bdqpp01l5nvf3" path="res://Moje grafika/player.png" id="1_v0x0v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bnev"]
+atlas = ExtResource("1_v0x0v")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gjc0v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bnev")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_feggi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fq2l3"]
+radius = 155.27
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["npcs"]]
+script = ExtResource("1_fw7bw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, -22)
+sprite_frames = SubResource("SpriteFrames_gjc0v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+shape = SubResource("CapsuleShape2D_feggi")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_fq2l3")
