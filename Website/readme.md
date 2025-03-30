@@ -1,6 +1,6 @@
 # IT Repair Shop - Webová stránka
 
-[![Stav](https://img.shields.io/badge/stav-aktivní-green)](https://github.com/MasterkoCZ/it-repair-shop)
+[![Stav](https://img.shields.io/badge/stav-aktivní-green)](https://github.com/MasterkoCZ/it-repair-shop/Website)
 
 Tento repozitář obsahuje webovou stránku pro hru **IT Repair Shop**, vytvořenou v HTML, CSS a JavaScriptu. Web slouží jako prezentační stránka s informacemi o hře, galerií, ovládáním a odkazem na GitHub.
 
