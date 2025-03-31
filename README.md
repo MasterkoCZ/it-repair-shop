@@ -37,26 +37,22 @@
 ## 6. Implementace
 - **Prototypy:**
   - Pohyb postavy: ![Pohyb](https://github.com/MasterkoCZ/it-repair-shop/blob/main/obr%C3%A1zky/pohyb.png).
-  - Vytvoření NPC: [NPC](https://github.com/MasterkoCZ/it-repair-shop/blob/main/obr%C3%A1zky/npc.png).
+  - Vytvoření NPC: ![NPC](https://github.com/MasterkoCZ/it-repair-shop/blob/main/obr%C3%A1zky/npc.png).
 - **Hra:** Základní scéna [game](https://github.com/MasterkoCZ/it-repair-shop/blob/main/Scenes/game.tscn)
 
 ## 7. Propagace
 - **Koncepce:** Web s představením hry a screenshoty.
 - **Materiály:**
-  - Web: [web/index.html](web/index.html).
-  - Banner: [web/banner.png](web/banner.png) – placeholder, finální verze později.
+  - Web: [Web](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Website).
 
 ## 8. Finální hra
 Aktuální verze obsahuje pohyb, základní UI (`partsList`) a systém zakázek.  
 - **Screenshoty:** [web/screenshots/](web/screenshots/) – menu, dílna, HUD (připravuje se).
 - **Build:**
-  - Windows: [build/ITRepairShopTycoon.exe](build/ITRepairShopTycoon.exe).
-  - HTML5: [build/html5/index.html](build/html5/index.html) – spustitelné na serveru.
+  - Windows: Prozatím na OneDrive (brzo na githubu) [ITRepairShopTycoon.exe](https://vosassvarnsdorf-my.sharepoint.com/:u:/g/personal/josef_razak021_skolavdf_cz/EdKVHHEbsONBv_71QOpC-IoB--15424hxHRmp6qlpqolng?e=nfv8Id).
 
 ## 9. Závěr
-Největší výzvou bylo nastavení UI – `partsList` překrýval popisný `Label`, což jsem vyřešil přidáním `VBoxContainer`. Hra je zatím prototyp, ale mechaniky fungují. Chybí komplexní zařízení (počítače, notebooky) a finální hudba – plánuji dokončit do dalšího termínu.
-
----
+Největší výzvou bylo nastavit celý průběh itemů. Předávání hráči, item v inventáři
 
 **Odkaz na repozitář:** [https://github.com/MasterkoCZ/it-repair-shop](https://github.com/MasterkoCZ/it-repair-shop)  
 **Autor:** Josef Razák  
