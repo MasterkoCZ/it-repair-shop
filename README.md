@@ -52,7 +52,7 @@ Aktuální verze obsahuje pohyb, základní UI (`partsList`) a systém zakázek.
   - Windows: Prozatím na OneDrive (brzo na githubu) [ITRepairShopTycoon.exe](https://vosassvarnsdorf-my.sharepoint.com/:u:/g/personal/josef_razak021_skolavdf_cz/EdKVHHEbsONBv_71QOpC-IoB--15424hxHRmp6qlpqolng?e=nfv8Id).
 ## Ovládání
 - **Pohyb** WASD nebo šipky
-- **Interakce** E (sběr, odevzdávání), F (upgrade), I (inventář), Levé tlačítko myši (kliknutím na item v inventáři (u opravářského stolu) se začne opravovat))
+- **Interakce** E (sběr, odevzdávání), F (upgrade), I (inventář), Levé tlačítko myši (kliknutím na item v inventáři (u opravářského stolu) se začne opravovat)
 
 ## 9. Závěr
 Největší výzvou při vývoji "IT Repair Shop Tycoon" bylo nastavování celého průběhu itemů a inventáře – konkrétně jak spravovat sbírání dílů z generátorů, jejich ukládání a použití při opravách na stole. Zpočátku jsem měl problém s tím, že se rozbité a opravené itemy v `player_inventory` špatně trackovaly a UI (`InventoryList`, `PartsList`) je nezobrazovalo přehledně, což působilo zmatek. Vyřešil jsem to použitím dvou systémů: `player_inventory` jako pole pro rozbité a opravené itemy (např. `mobile_screen_bad`, `repaired_mobile_screen`) a `repair_parts` jako `Dictionary` pro počet dílů (např. `new_screen: 2`), s dynamickou aktualizací UI přes `update_inventory_ui()` a `update_parts_ui()`. Hra je funkční prototyp s pohybem, opravami a levelovým systémem, ale chybí ještě rozšíření zařízení (např. notebooky), což plánuji dokončit.
