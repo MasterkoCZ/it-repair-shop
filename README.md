@@ -36,7 +36,7 @@
 
 ## 6. Implementace
 - **Prototypy:**
-  - Pohyb postavy: [Pohyb](https://github.com/MasterkoCZ/it-repair-shop/blob/main/obr%C3%A1zky/pohyb.png).
+  - Pohyb postavy: ![Pohyb](https://github.com/MasterkoCZ/it-repair-shop/blob/main/obr%C3%A1zky/pohyb.png).
   - Vytvoření NPC: [NPC](https://github.com/MasterkoCZ/it-repair-shop/blob/main/obr%C3%A1zky/npc.png).
 - **Hra:** Základní scéna [game](https://github.com/MasterkoCZ/it-repair-shop/blob/main/Scenes/game.tscn)
 
