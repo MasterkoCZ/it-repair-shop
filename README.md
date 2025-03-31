@@ -18,8 +18,8 @@
 ## 3. Grafika
 - **Software:** Pixelorama.
 - **Hardware:** PC, myš.
-- **Pravidla:** 16x16 px sprity, retro pixel art, paleta 8 barev (tmavé tóny + modrý akcent #00b7ff).
-- **Návrhy:** Základní assety (postava, podlaha, zeď, okno) v [It_repair_shop_asset.png](It_repair_shop_asset.png).
+- **Pravidla:** 16x16 px sprity, retro pixel art.
+- **Návrhy:** Základní assety (postava, podlaha, zeď, okno) v [It_repair_shop_asset.png](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Graphics/Interier).
 - **Assety:** [game/Graphics/](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Graphics) – aktuálně postava a prostředí, telefony/počítače přidány později.
 
 ## 4. Zvuky
