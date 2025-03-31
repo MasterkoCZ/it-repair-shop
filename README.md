@@ -25,29 +25,26 @@
 ## 4. Zvuky
 - **Software:** Audacity.
 - **Hardware:** Mikrofon, PC.
-- **Koncepce:** Realistické 8-bit zvuky (nástroje, sběr dílů, kroky).
-- **Nahrávky:** Zatím hrubé zvuky kroků [game/assets/sounds/step.wav](game/assets/sounds/step.wav).
-- **Assety:** Finální zvuky budou doladěny ve finální verzi.
+- **Koncepce:** Realistické zvuky (nástroje, kroky).
+- **Assety:** [Assety](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Audio)
 
 ## 5. Hudba
 - **Software:** Žádný (půjčená hudba).
 - **Hardware:** PC.
 - **Koncepce:** 8-bit chiptune pro retro atmosféru, klidná v menu, rychlá ve hře. Hudba je NOCOPYRIGHT, stažena z internetu.
-- **Nahrávky:** [game/assets/music/menu.mp3](game/assets/music/menu.mp3).
-- **Assety:** Finální výběr později.
+- **Assety:** [Assety](https://github.com/MasterkoCZ/it-repair-shop/tree/main/Audio)
 
 ## 6. Implementace
 - **Prototypy:**
-  - Pohyb postavy: [game/prototypes/movement.tscn](game/prototypes/movement.tscn).
-  - Přijímání zakázek: [game/prototypes/order_system.tscn](game/prototypes/order_system.tscn).
-- **Hra:** Základní scéna [game/scenes/main.tscn](game/scenes/main.tscn), logika v [game/scripts/player.gd](game/scripts/player.gd).
+  - Pohyb postavy: [Pohyb](https://github.com/MasterkoCZ/it-repair-shop/blob/main/obr%C3%A1zky/pohyb.png).
+  - Vytvoření NPC: [NPC](https://github.com/MasterkoCZ/it-repair-shop/blob/main/obr%C3%A1zky/npc.png).
+- **Hra:** Základní scéna [game](https://github.com/MasterkoCZ/it-repair-shop/blob/main/Scenes/game.tscn)
 
 ## 7. Propagace
 - **Koncepce:** Web s představením hry a screenshoty.
 - **Materiály:**
   - Web: [web/index.html](web/index.html).
   - Banner: [web/banner.png](web/banner.png) – placeholder, finální verze později.
-  - Video: Plánováno.
 
 ## 8. Finální hra
 Aktuální verze obsahuje pohyb, základní UI (`partsList`) a systém zakázek.  
